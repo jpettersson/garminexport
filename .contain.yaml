@@ -1,0 +1,8 @@
+images:
+  - image: "jpettersson/garminexport:v2"
+    dockerfile: Dockerfile
+    commands: any
+    mounts:
+        - src: "$HOME/data/garmin"
+          dst: "/data/garmin"
+          type: "bind"
